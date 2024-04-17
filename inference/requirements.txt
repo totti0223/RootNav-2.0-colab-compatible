@@ -1,5 +1,4 @@
 kdtree
-numpy
-Pillow
-scipy
+pyyaml
 tqdm
+git+https://github.com/lucasb-eyer/pydensecrf.git
