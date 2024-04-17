@@ -128,7 +128,7 @@ def run_rootnav(model_data, use_cuda, args, input_dir, output_dir):
                 logger.warning("No seed locations found - no output")
                 continue
             else:
-                logger.debug(f"Found {len(heatmap_points['Seed'])} raw seed locations, filtered to {len(seed_locations)} location{"" if len(seed_locations) == 1 else "s"}")
+                logger.debug(f"Found {len(heatmap_points['Seed'])} raw seed locations, filtered to {len(seed_locations)} location{'' if len(seed_locations) == 1 else "s"}")
 
             if len(primary_tips) < 1:
                 logger.warning("No first order roots found - no output")
