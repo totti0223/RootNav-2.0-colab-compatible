@@ -134,7 +134,7 @@ def run_rootnav(model_data, use_cuda, args, input_dir, output_dir):
                 logger.warning("No first order roots found - no output")
                 continue
             else:
-                logger.debug(f"Found {len(heatmap_points['Primary'])} raw first order root tip locations, filtered to {len(primary_tips)} location{"" if len(primary_tips) == 1 else 's'}")
+                logger.debug(f"Found {len(heatmap_points['Primary'])} raw first order root tip locations, filtered to {len(primary_tips)} location{'' if len(primary_tips) == 1 else 's'}")
 
             primary_goal_dict = {pt:ix for ix,pt in enumerate(seed_locations)}
             lateral_goal_dict = {}
